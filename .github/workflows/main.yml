@@ -23,7 +23,7 @@ jobs:
 
       - name: write
         run: |
-          date > time.txt
+          python3 ./I.py
 
       - name: setup git config
         run: |
@@ -34,6 +34,6 @@ jobs:
       - name: commit
         run: |
           # Stage the file, commit and push
-          git add time.txt
+          git add *
           git commit -m "new date commit"
           git push origin build

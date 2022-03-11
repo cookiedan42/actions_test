@@ -20,8 +20,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: write
-      run: |
-        date > time.txt
+        run: |
+          date > time.txt
 
       - name: setup git config
         run: |
